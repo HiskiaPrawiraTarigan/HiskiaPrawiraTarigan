@@ -19,6 +19,9 @@
 <!-- 🦕 Dino Game Animation -->
 <img src="https://raw.githubusercontent.com/HiskiaPrawiraTarigan/HiskiaPrawiraTarigan/main/assets/dino-run.svg" width="100%" alt="Dino Run Animation"/>
 
+<!-- 👾 Pac-Man Animation -->
+<img src="https://raw.githubusercontent.com/HiskiaPrawiraTarigan/HiskiaPrawiraTarigan/main/assets/pacman.svg" width="100%" alt="Pac-Man Animation"/>
+
 </div>
 
 <br/>
