@@ -8,9 +8,11 @@
 
 <br/>
 
-[![GitHub followers](https://img.shields.io/github/followers/HiskiaPrawiraTarigan?label=Followers&style=flat-square&color=58a6ff&labelColor=161b22&logo=github)](https://github.com/HiskiaPrawiraTarigan)
+[![GitHub followers](https://img.shields.io/github/followers/HiskiaPrawiraTarigan?label=Followers&style=for-the-badge&color=58a6ff&labelColor=0d1117&logo=github&logoColor=white)](https://github.com/HiskiaPrawiraTarigan)
 &nbsp;
-[![Profile Views](https://komarev.com/ghpvc/?username=HiskiaPrawiraTarigan&style=flat-square&color=6e7681&label=Profile+Views)](https://github.com/HiskiaPrawiraTarigan)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/hiskia.tarigan)
+&nbsp;
+[![Profile Views](https://komarev.com/ghpvc/?username=HiskiaPrawiraTarigan&style=for-the-badge&color=6e7681&label=Views)](https://github.com/HiskiaPrawiraTarigan)
 
 </div>
 
@@ -24,37 +26,37 @@
 <tr>
 <td width="58%" valign="top">
 
-### About Me
+### Tentang Saya
 
-I'm a backend-oriented web systems engineer focused on building **structured, scalable, and secure** digital infrastructure.
+Saya adalah **web systems engineer** yang berfokus pada pembangunan infrastruktur digital yang terstruktur, skalabel, dan aman.
 
-My engineering practice centers around **Laravel-based systems** — from multi-level authentication and real-time communication to database architecture and system analysis.
+Praktik rekayasa saya berpusat pada **sistem berbasis Laravel** — mulai dari autentikasi multi-level, komunikasi real-time, hingga arsitektur database dan analisis sistem.
 
-I approach problems analytically: **design first, implement second**. I believe good systems are defined as much by what they _prevent_ as by what they _enable_.
+Saya mendekati masalah secara analitis: **desain dulu, implementasi kemudian**. Saya percaya sistem yang baik ditentukan sama banyaknya oleh apa yang _dicegah_ sebaik apa yang _dimungkinkan_.
 
-Currently expanding toward **AI integration**, **Blockchain infrastructure**, and **data-driven system design** — studying how intelligent and decentralized architectures are reshaping modern engineering.
+Saat ini memperluas wawasan ke arah **integrasi AI**, **infrastruktur Blockchain**, dan **desain sistem berbasis data** — mempelajari bagaimana arsitektur cerdas dan terdesentralisasi membentuk ulang rekayasa modern.
 
 </td>
 <td width="2%"></td>
 <td width="40%" valign="top">
 
-### Identity
+### Identitas
 
 ```yaml
-name     : Hiskia Prawira Tarigan
-role     : Web Systems Engineer
-location : Indonesia
+nama     : Hiskia Prawira Tarigan
+peran    : Web Systems Engineer
+lokasi   : Indonesia
 stack    :
   - PHP · Laravel
   - MySQL · PostgreSQL
   - Vue.js · JavaScript
-focus    :
-  - Backend Architecture
-  - Auth & Security
-  - System Analysis
-next     :
+fokus    :
+  - Arsitektur Backend
+  - Autentikasi & Keamanan
+  - Analisis Sistem
+berikutnya :
   - AI · Blockchain · Web3
-approach : Design-first. Logic-driven.
+pendekatan : Design-first. Logic-driven.
 ```
 
 </td>
@@ -67,21 +69,21 @@ approach : Design-first. Logic-driven.
 
 <br/>
 
-### Architecture & Engineering
+### Arsitektur & Rekayasa
 
 <br/>
 
-| Skill | Proficiency | Level |
+| Keahlian | Kemampuan | Level |
 |---|---|---|
-| Backend Architecture | `████████████████████` | Expert |
+| Arsitektur Backend | `████████████████████` | Expert |
 | Laravel / PHP | `████████████████████` | Expert |
-| Authentication Systems | `███████████████████░` | Advanced |
-| Database Design | `███████████████████░` | Advanced |
+| Sistem Autentikasi | `███████████████████░` | Advanced |
+| Desain Database | `███████████████████░` | Advanced |
 | REST API Design | `██████████████████░░` | Advanced |
-| System Analysis | `████████████████░░░░` | Proficient |
-| Real-time Systems | `███████████████░░░░░` | Proficient |
-| Data Modeling | `███████████████░░░░░` | Proficient |
-| AI Integration | `█████████░░░░░░░░░░░` | Learning |
+| Analisis Sistem | `████████████████░░░░` | Proficient |
+| Sistem Real-time | `███████████████░░░░░` | Proficient |
+| Pemodelan Data | `███████████████░░░░░` | Proficient |
+| Integrasi AI | `█████████░░░░░░░░░░░` | Learning |
 | Blockchain / Web3 | `████████░░░░░░░░░░░░` | Exploring |
 
 <br/>
@@ -90,159 +92,176 @@ approach : Design-first. Logic-driven.
 
 <br/>
 
-### Technical Stack
-
-<br/>
-
-<table width="100%">
-<tr>
-<td width="33%" valign="top" align="center">
-
-**Core**
-
-PHP &nbsp;·&nbsp; Laravel &nbsp;·&nbsp; MySQL
-
-PostgreSQL &nbsp;·&nbsp; Redis
-
-</td>
-<td width="33%" valign="top" align="center">
-
-**Interface**
-
-JavaScript &nbsp;·&nbsp; Vue.js &nbsp;·&nbsp; Blade
-
-Tailwind CSS &nbsp;·&nbsp; Bootstrap
-
-</td>
-<td width="33%" valign="top" align="center">
-
-**Tooling**
-
-Git &nbsp;·&nbsp; Linux &nbsp;·&nbsp; Docker
-
-Composer &nbsp;·&nbsp; Postman
-
-</td>
-</tr>
-</table>
-
-<br/>
-
----
-
-<br/>
-
-### Selected Systems Built
-
-<br/>
-
-<table width="100%">
-<tr>
-<td width="50%" valign="top">
-
-**Multi-Level Authentication Platform**
-
-Role-based access control with granular permission layers, session management, and secure credential handling across multiple user hierarchies.
-
-<br/>
-
-**Real-time Chat System**
-
-Bidirectional messaging over WebSocket with persistent storage, read-state tracking, and role-aware routing between Admin ↔ User channels.
-
-<br/>
-
-**Online Course Infrastructure**
-
-Modular LMS with enrollment logic, progress tracking, content delivery pipelines, and payment gateway integration.
-
-</td>
-<td width="50%" valign="top">
-
-**Digital Library Engine**
-
-Cataloging and retrieval system with advanced search, borrowing workflows, availability management, and overdue-handling logic.
-
-<br/>
-
-**Survey & Analytics Platform**
-
-Dynamic form builder with conditional branching, response aggregation, and structured reporting with exportable result sets.
-
-<br/>
-
-**Admin Dashboard**
-
-Unified control interface with data visualization, CRUD orchestration, audit logging, and user management across system modules.
-
-</td>
-</tr>
-</table>
-
-<br/>
-
----
-
-<br/>
-
-### Technology Direction
-
-<br/>
-
-<table width="100%">
-<tr>
-<td width="50%" valign="top">
-
-**Artificial Intelligence**
-Applied pattern recognition, model integration, and intelligent automation embedded within web infrastructure.
-
-**Blockchain Infrastructure**
-Decentralized architecture, smart contract logic, and on-chain data integrity for trustless system design.
-
-</td>
-<td width="50%" valign="top">
-
-**Crypto Ecosystem**
-Protocol-level understanding, tokenomics modeling, and Web3 integration patterns.
-
-**Data Pattern Recognition**
-Behavioral analytics, anomaly detection, and predictive system modeling from structured datasets.
-
-</td>
-</tr>
-</table>
-
-<br/>
-
----
-
-<br/>
-
-### Engineering Principles
-
-<br/>
-
-&nbsp;&nbsp;`01` &nbsp; Systems should be designed for clarity before optimization
-
-&nbsp;&nbsp;`02` &nbsp; Security is architecture, not an afterthought
-
-&nbsp;&nbsp;`03` &nbsp; Every abstraction must earn its existence
-
-&nbsp;&nbsp;`04` &nbsp; Complexity is a liability — structure is an asset
-
-&nbsp;&nbsp;`05` &nbsp; Good engineering leaves less room for interpretation
-
-<br/>
-
----
-
-<br/>
-
-### GitHub Activity
+### Teknologi yang Digunakan
 
 <br/>
 
 <div align="center">
+
+**— Backend —**
+
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+
+<br/>
+
+**— Frontend —**
+
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+
+<br/>
+
+**— DevOps & Tools —**
+
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+![Composer](https://img.shields.io/badge/Composer-885630?style=for-the-badge&logo=composer&logoColor=white)
+
+</div>
+
+<br/>
+
+---
+
+<br/>
+
+### Sistem yang Dibangun
+
+<br/>
+
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+
+**Platform Autentikasi Multi-Level**
+
+Sistem kontrol akses berbasis peran dengan lapisan izin yang terperinci, manajemen sesi, dan penanganan kredensial yang aman di berbagai hierarki pengguna.
+
+<br/>
+
+**Sistem Chat Real-time**
+
+Perpesanan dua arah berbasis WebSocket dengan penyimpanan pesan persisten, pelacakan status baca, dan routing berbasis peran antara saluran Admin ↔ User.
+
+<br/>
+
+**Infrastruktur Kursus Online**
+
+LMS modular dengan logika pendaftaran, pelacakan progres belajar, pipeline pengiriman konten, dan integrasi payment gateway.
+
+</td>
+<td width="50%" valign="top">
+
+**Mesin Perpustakaan Digital**
+
+Sistem katalogisasi dan pengambilan data dengan pencarian canggih, alur peminjaman, manajemen ketersediaan, dan penanganan logika keterlambatan.
+
+<br/>
+
+**Platform Survei & Analitik**
+
+Form builder dinamis dengan percabangan kondisional, agregasi respons, dan pelaporan terstruktur dengan hasil yang dapat diekspor.
+
+<br/>
+
+**Dashboard Admin**
+
+Antarmuka kontrol terpadu dengan visualisasi data, orkestrasi CRUD, pencatatan audit, dan manajemen pengguna di seluruh modul sistem.
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+---
+
+<br/>
+
+### Arah Teknologi
+
+<br/>
+
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+
+![AI](https://img.shields.io/badge/Artificial_Intelligence-FF6F61?style=flat-square&logo=openai&logoColor=white)
+
+Pengenalan pola terapan, integrasi model, dan otomatisasi cerdas yang tertanam dalam infrastruktur web yang ada.
+
+<br/>
+
+![Blockchain](https://img.shields.io/badge/Blockchain-F7931A?style=flat-square&logo=bitcoin&logoColor=white)
+
+Arsitektur terdesentralisasi, logika smart contract, dan integritas data on-chain untuk desain sistem yang trustless.
+
+</td>
+<td width="50%" valign="top">
+
+![Web3](https://img.shields.io/badge/Crypto_Ecosystem-627EEA?style=flat-square&logo=ethereum&logoColor=white)
+
+Pemahaman tingkat protokol, pemodelan tokenomics, dan pola integrasi Web3.
+
+<br/>
+
+![Data](https://img.shields.io/badge/Data_Patterns-00C7B7?style=flat-square&logo=databricks&logoColor=white)
+
+Analitik perilaku, deteksi anomali, dan pemodelan sistem prediktif dari dataset terstruktur.
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+---
+
+<br/>
+
+### Prinsip Rekayasa
+
+<br/>
+
+&nbsp;&nbsp;`01` &nbsp; Sistem harus dirancang untuk kejelasan sebelum optimasi
+
+&nbsp;&nbsp;`02` &nbsp; Keamanan adalah arsitektur, bukan tambahan belakangan
+
+&nbsp;&nbsp;`03` &nbsp; Setiap abstraksi harus membuktikan keberadaannya
+
+&nbsp;&nbsp;`04` &nbsp; Kompleksitas adalah kewajiban — struktur adalah aset
+
+&nbsp;&nbsp;`05` &nbsp; Rekayasa yang baik menyisakan lebih sedikit ruang untuk interpretasi
+
+<br/>
+
+---
+
+<br/>
+
+### Aktivitas GitHub
+
+<br/>
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/HiskiaPrawiraTarigan/HiskiaPrawiraTarigan/output/github-contribution-grid-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/HiskiaPrawiraTarigan/HiskiaPrawiraTarigan/output/github-contribution-grid-snake.svg"/>
+  <img alt="github-snake" src="https://raw.githubusercontent.com/HiskiaPrawiraTarigan/HiskiaPrawiraTarigan/output/github-contribution-grid-snake-dark.svg" width="98%"/>
+</picture>
+
+<br/><br/>
 
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=HiskiaPrawiraTarigan&theme=github_dark" width="98%"/>
 
@@ -264,11 +283,74 @@ Behavioral analytics, anomaly detection, and predictive system modeling from str
 
 ---
 
+<br/>
+
+### Mini Games — Tantang Dirimu!
+
+<br/>
+
+<table width="100%">
+<tr>
+<td width="50%" valign="top" align="center">
+
+#### 🟩 Sudoku
+
+> *Uji logikamu — sama seperti cara saya mendekati setiap sistem.*
+
+```
+┌───────┬───────┬───────┐
+│ 5 3 . │ . 7 . │ . . . │
+│ 6 . . │ 1 9 5 │ . . . │
+│ . 9 8 │ . . . │ . 6 . │
+├───────┼───────┼───────┤
+│ 8 . . │ . 6 . │ . . 3 │
+│ 4 . . │ 8 . 3 │ . . 1 │
+│ 7 . . │ . 2 . │ . . 6 │
+├───────┼───────┼───────┤
+│ . 6 . │ . . . │ 2 8 . │
+│ . . . │ 4 1 9 │ . . 5 │
+│ . . . │ . 8 . │ . 7 9 │
+└───────┴───────┴───────┘
+```
+
+[![Play Sudoku Online](https://img.shields.io/badge/▶%20Main%20Sudoku%20Online-1a1a2e?style=for-the-badge&logo=target&logoColor=4FC08D)](https://sudoku.com)
+
+</td>
+<td width="50%" valign="top" align="center">
+
+#### 🐍 Snake
+
+> *Sederhana di luar, kompleks di dalam — seperti arsitektur yang baik.*
+
+```
+╔══════════════════════╗
+║  · · · · · · · · ·  ║
+║  · ● ● ● ● · · · ·  ║
+║  · · · · ● · · · ·  ║
+║  · · · · ● ● ● · ·  ║
+║  · · · · · · ● · ·  ║
+║  · · · · · · ● ● ·  ║
+║  · · · · · · · ● ·  ║
+║  · · · 🍎 · · · ● · ║
+║  · · · · · · · · ·  ║
+╚══════════════════════╝
+```
+
+[![Play Snake Online](https://img.shields.io/badge/▶%20Main%20Snake%20Online-1a1a2e?style=for-the-badge&logo=target&logoColor=FF2D20)](https://playsnake.org)
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+---
+
 <div align="center">
 
 <br/>
 
-*Calm. Structured. Intentional.*
+*Tenang. Terstruktur. Disengaja.*
 
 <br/>
 
