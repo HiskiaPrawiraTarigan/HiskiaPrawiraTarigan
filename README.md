@@ -14,6 +14,11 @@
 &nbsp;
 [![Profile Views](https://komarev.com/ghpvc/?username=HiskiaPrawiraTarigan&style=for-the-badge&color=6e7681&label=Views)](https://github.com/HiskiaPrawiraTarigan)
 
+<br/>
+
+<!-- 🦕 Dino Game Animation -->
+<img src="https://raw.githubusercontent.com/HiskiaPrawiraTarigan/HiskiaPrawiraTarigan/main/assets/dino-run.svg" width="100%" alt="Dino Run Animation"/>
+
 </div>
 
 <br/>
@@ -22,46 +27,15 @@
 
 <br/>
 
-<table width="100%">
-<tr>
-<td width="58%" valign="top">
-
 ### Tentang Saya
 
 Saya adalah **web systems engineer** yang berfokus pada pembangunan infrastruktur digital yang terstruktur, skalabel, dan aman.
 
 Praktik rekayasa saya berpusat pada **sistem berbasis Laravel** — mulai dari autentikasi multi-level, komunikasi real-time, hingga arsitektur database dan analisis sistem.
 
-Saya mendekati masalah secara analitis: **desain dulu, implementasi kemudian**. Saya percaya sistem yang baik ditentukan sama banyaknya oleh apa yang _dicegah_ sebaik apa yang _dimungkinkan_.
+Saya mendekati masalah secara analitis: **desain dulu, implementasi kemudian**. Sistem yang baik ditentukan sama banyaknya oleh apa yang _dicegah_ sebaik apa yang _dimungkinkan_.
 
-Saat ini memperluas wawasan ke arah **integrasi AI**, **infrastruktur Blockchain**, dan **desain sistem berbasis data** — mempelajari bagaimana arsitektur cerdas dan terdesentralisasi membentuk ulang rekayasa modern.
-
-</td>
-<td width="2%"></td>
-<td width="40%" valign="top">
-
-### Identitas
-
-```yaml
-nama     : Hiskia Prawira Tarigan
-peran    : Web Systems Engineer
-lokasi   : Indonesia
-stack    :
-  - PHP · Laravel
-  - MySQL · PostgreSQL
-  - Vue.js · JavaScript
-fokus    :
-  - Arsitektur Backend
-  - Autentikasi & Keamanan
-  - Analisis Sistem
-berikutnya :
-  - AI · Blockchain · Web3
-pendekatan : Design-first. Logic-driven.
-```
-
-</td>
-</tr>
-</table>
+Saat ini memperluas wawasan ke arah **integrasi AI**, **infrastruktur Blockchain**, dan **desain sistem berbasis data**.
 
 <br/>
 
@@ -229,32 +203,13 @@ Analitik perilaku, deteksi anomali, dan pemodelan sistem prediktif dari dataset 
 
 <br/>
 
-### Prinsip Rekayasa
-
-<br/>
-
-![01](https://img.shields.io/badge/01-58a6ff?style=flat-square&logoColor=white) &nbsp; Sistem harus dirancang untuk kejelasan sebelum optimasi
-
-![02](https://img.shields.io/badge/02-3fb950?style=flat-square&logoColor=white) &nbsp; Keamanan adalah arsitektur, bukan tambahan belakangan
-
-![03](https://img.shields.io/badge/03-d2a8ff?style=flat-square&logoColor=white) &nbsp; Setiap abstraksi harus membuktikan keberadaannya
-
-![04](https://img.shields.io/badge/04-f0883e?style=flat-square&logoColor=white) &nbsp; Kompleksitas adalah kewajiban — struktur adalah aset
-
-![05](https://img.shields.io/badge/05-e3b341?style=flat-square&logoColor=black) &nbsp; Rekayasa yang baik menyisakan lebih sedikit ruang untuk interpretasi
-
-<br/>
-
----
-
-<br/>
-
 ### Aktivitas GitHub
 
 <br/>
 
 <div align="center">
 
+<!-- 🐍 Snake Contribution Animation -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/HiskiaPrawiraTarigan/HiskiaPrawiraTarigan/output/github-contribution-grid-snake-dark.svg"/>
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/HiskiaPrawiraTarigan/HiskiaPrawiraTarigan/output/github-contribution-grid-snake.svg"/>
@@ -263,21 +218,10 @@ Analitik perilaku, deteksi anomali, dan pemodelan sistem prediktif dari dataset 
 
 <br/>
 
+<!-- 🧬 Conway's Game of Life -->
 **🧬 Conway's Game of Life — Self Playing**
 
 <img src="https://raw.githubusercontent.com/HiskiaPrawiraTarigan/HiskiaPrawiraTarigan/output/game-of-life.svg" width="98%" alt="Conway's Game of Life"/>
-
-<br/><br/>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=HiskiaPrawiraTarigan&theme=github_dark" width="98%"/>
-
-<br/>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=HiskiaPrawiraTarigan&theme=github_dark" width="32%"/>
-&nbsp;
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=HiskiaPrawiraTarigan&theme=github_dark" width="32%"/>
-&nbsp;
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=HiskiaPrawiraTarigan&theme=github_dark" width="32%"/>
 
 <br/>
 
@@ -291,7 +235,7 @@ Analitik perilaku, deteksi anomali, dan pemodelan sistem prediktif dari dataset 
 
 <br/>
 
-### Mini Games — Tantang Dirimu!
+### Mini Games
 
 <br/>
 
@@ -319,47 +263,16 @@ Analitik perilaku, deteksi anomali, dan pemodelan sistem prediktif dari dataset 
 └───────┴───────┴───────┘
 ```
 
-[![Play Sudoku Online](https://img.shields.io/badge/▶%20Main%20Sudoku%20Online-1a1a2e?style=for-the-badge&logo=target&logoColor=4FC08D)](https://sudoku.com)
+[![Play Sudoku](https://img.shields.io/badge/▶%20Main%20Sudoku%20Online-1a1a2e?style=for-the-badge&logo=target&logoColor=4FC08D)](https://sudoku.com)
 
 </td>
 <td width="50%" valign="top" align="center">
 
-#### 🐍 Snake
+#### 🎮 2048
 
-> *Sederhana di luar, kompleks di dalam — seperti arsitektur yang baik.*
+> *Gabungkan logika, raih 2048.*
 
-```
-╔══════════════════════╗
-║  · · · · · · · · ·  ║
-║  · ● ● ● ● · · · ·  ║
-║  · · · · ● · · · ·  ║
-║  · · · · ● ● ● · ·  ║
-║  · · · · · · ● · ·  ║
-║  · · · · · · ● ● ·  ║
-║  · · · · · · · ● ·  ║
-║  · · · 🍎 · · · ● · ║
-║  · · · · · · · · ·  ║
-╚══════════════════════╝
-```
-
-[![Play Snake Online](https://img.shields.io/badge/▶%20Main%20Snake%20Online-1a1a2e?style=for-the-badge&logo=target&logoColor=FF2D20)](https://playsnake.org)
-
-</td>
-</tr>
-</table>
-### 🎮 2048 — Main Langsung di GitHub Pages
-
-<br/>
-
-<div align="center">
-
-> *Gabungkan tile · Raih 2048 · Gerak dengan keyboard atau swipe*
-
-<br/>
-
-[![▶ MAIN 2048 SEKARANG](https://img.shields.io/badge/▶%20%20MAIN%20%202048%20%20SEKARANG-58a6ff?style=for-the-badge&logoColor=0d1117)](https://hiskiaprawiraTarigan.github.io/HiskiaPrawiraTarigan/games/2048/)
-
-<br/>
+[![▶ MAIN 2048](https://img.shields.io/badge/▶%20%20MAIN%20%202048-58a6ff?style=for-the-badge&logoColor=0d1117)](https://hiskiaprawiraTarigan.github.io/HiskiaPrawiraTarigan/games/2048/)
 
 ```
 ┌──────┬──────┬──────┬──────┐
@@ -371,14 +284,13 @@ Analitik perilaku, deteksi anomali, dan pemodelan sistem prediktif dari dataset 
 ├──────┼──────┼──────┼──────┤
 │   4  │  256 │  512 │ 1024 │
 └──────┴──────┴──────┴──────┘
-                    → menuju 2048
 ```
 
-**Keyboard:** ← → ↑ ↓ &nbsp;|&nbsp; **Mobile:** Swipe ke segala arah &nbsp;|&nbsp; **Undo:** tersedia
+*Keyboard ← → ↑ ↓ &nbsp;|&nbsp; Swipe mobile &nbsp;|&nbsp; Undo tersedia*
 
-*Dihosting di GitHub Pages · Dark theme · Animasi halus · Skor tersimpan otomatis*
-
-</div>
+</td>
+</tr>
+</table>
 
 <br/>
 

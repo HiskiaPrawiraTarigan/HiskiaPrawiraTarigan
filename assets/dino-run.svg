@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="900" height="200">
+<defs>
+<style>
+  /* ── Cactus movement ─────────────────── */
+  @keyframes c1 { 0%{transform:translateX(0)} 100%{transform:translateX(-1050px)} }
+  @keyframes c2 { 0%{transform:translateX(0)} 100%{transform:translateX(-1050px)} }
+
+  /* ── Dino jump 3s cycle ───────────────
+     Cactus travels 1050px in 3s = 350px/s
+     Dino at x≈110; cactus starts at x=920
+     Time to reach dino: (920-110)/350 = 2.31s → 77% of cycle
+     Jump from 71%→97%                            */
+  @keyframes jump {
+    0%,70%  { transform:translateY(0px) }
+    78%     { transform:translateY(-72px) }
+    88%     { transform:translateY(-72px) }
+    96%,100%{ transform:translateY(0px) }
+  }
+  /* ── Leg alternation ──────────────────── */
+  @keyframes leg1 { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+  @keyframes leg2 { 0%,49%{opacity:0} 50%,100%{opacity:1} }
+  /* ── Blink eye ───────────────────────── */
+  @keyframes blink { 0%,92%,96%,100%{opacity:1} 94%{opacity:0} }
+  /* ── Ground scroll ───────────────────── */
+  @keyframes gscroll { 0%{transform:translateX(0)} 100%{transform:translateX(-60px)} }
+  /* ── Cloud drift ─────────────────────── */
+  @keyframes cloud1 { 0%{transform:translateX(0)} 100%{transform:translateX(-1100px)} }
+  @keyframes cloud2 { 0%{transform:translateX(0)} 100%{transform:translateX(-1100px)} }
+  /* ── Score tick ──────────────────────── */
+  @keyframes score  { 0%{opacity:0} 2%{opacity:1} }
+
+  .c1  { animation:c1   3s linear   infinite }
+  .c2  { animation:c2   3s linear   infinite; animation-delay:-1.5s }
+  .dino{ animation:jump 3s ease-in-out infinite; transform-origin:110px 152px }
+  .la  { animation:leg1 .22s linear infinite }
+  .lb  { animation:leg2 .22s linear infinite }
+  .eye { animation:blink 3s linear infinite }
+  .gd  { animation:gscroll .5s linear infinite }
+  .cl1 { animation:cloud1 14s linear infinite }
+  .cl2 { animation:cloud2 14s linear infinite; animation-delay:-7s }
+</style>
+</defs>
+
+<!-- ── Background ── -->
+<rect width="900" height="200" fill="#0d1117"/>
+
+<!-- ── Stars ── -->
+<circle cx="40"  cy="20" r="1.2" fill="#8b949e" opacity=".6"/>
+<circle cx="180" cy="12" r="1"   fill="#8b949e" opacity=".5"/>
+<circle cx="310" cy="25" r="1.5" fill="#c9d1d9" opacity=".4"/>
+<circle cx="490" cy="8"  r="1"   fill="#8b949e" opacity=".6"/>
+<circle cx="620" cy="18" r="1.2" fill="#c9d1d9" opacity=".5"/>
+<circle cx="780" cy="10" r="1"   fill="#8b949e" opacity=".4"/>
+<circle cx="860" cy="22" r="1.5" fill="#c9d1d9" opacity=".5"/>
+
+<!-- ── Clouds ── -->
+<g class="cl1">
+  <rect x="250" y="38" width="60" height="10" rx="5" fill="#161b22"/>
+  <rect x="262" y="30" width="35" height="14" rx="7" fill="#161b22"/>
+</g>
+<g class="cl2">
+  <rect x="600" y="55" width="48" height="9"  rx="4" fill="#161b22"/>
+  <rect x="612" y="48" width="26" height="12" rx="6" fill="#161b22"/>
+</g>
+
+<!-- ── Score HUD ── -->
+<text x="780" y="28" font-family="'Courier New',monospace" font-size="14" font-weight="bold" fill="#6e7681">HI</text>
+<text x="806" y="28" font-family="'Courier New',monospace" font-size="14" font-weight="bold" fill="#c9d1d9">00000</text>
+
+<!-- ── Ground ── -->
+<rect x="0" y="152" width="900" height="2" fill="#21262d"/>
+<g class="gd">
+  <rect x="0"   y="156" width="18" height="2" fill="#21262d"/>
+  <rect x="60"  y="156" width="10" height="2" fill="#21262d"/>
+  <rect x="120" y="156" width="18" height="2" fill="#21262d"/>
+  <rect x="180" y="156" width="10" height="2" fill="#21262d"/>
+  <rect x="240" y="156" width="18" height="2" fill="#21262d"/>
+  <rect x="300" y="156" width="10" height="2" fill="#21262d"/>
+  <rect x="360" y="156" width="18" height="2" fill="#21262d"/>
+  <rect x="420" y="156" width="10" height="2" fill="#21262d"/>
+  <rect x="480" y="156" width="18" height="2" fill="#21262d"/>
+  <rect x="540" y="156" width="10" height="2" fill="#21262d"/>
+  <rect x="600" y="156" width="18" height="2" fill="#21262d"/>
+  <rect x="660" y="156" width="10" height="2" fill="#21262d"/>
+  <rect x="720" y="156" width="18" height="2" fill="#21262d"/>
+  <rect x="780" y="156" width="10" height="2" fill="#21262d"/>
+  <rect x="840" y="156" width="18" height="2" fill="#21262d"/>
+  <rect x="900" y="156" width="10" height="2" fill="#21262d"/>
+</g>
+
+<!-- ── CACTUS 1 (single tall) ──  starts at x=920 -->
+<g class="c1">
+  <!-- main stem -->
+  <rect x="920" y="110" width="14" height="42" fill="#3fb950"/>
+  <!-- left arm top-->
+  <rect x="904" y="107" width="8"  height="22" fill="#3fb950"/>
+  <rect x="904" y="125" width="16" height="6"  fill="#3fb950"/>
+  <!-- right arm -->
+  <rect x="934" y="120" width="8"  height="18" fill="#3fb950"/>
+  <rect x="926" y="128" width="16" height="6"  fill="#3fb950"/>
+</g>
+
+<!-- ── CACTUS 2 (double, offset −1.5s) ── -->
+<g class="c2">
+  <rect x="920" y="116" width="12" height="36" fill="#3fb950"/>
+  <rect x="906" y="113" width="7"  height="20" fill="#3fb950"/>
+  <rect x="906" y="129" width="14" height="5"  fill="#3fb950"/>
+
+  <rect x="944" y="120" width="12" height="32" fill="#3fb950"/>
+  <rect x="956" y="118" width="7"  height="18" fill="#3fb950"/>
+  <rect x="944" y="130" width="19" height="5"  fill="#3fb950"/>
+</g>
+
+<!-- ── DINO ── (body bottom = y:152, body center x≈110) -->
+<g class="dino">
+  <!-- tail -->
+  <rect x="66" y="128" width="28" height="10" fill="#58a6ff"/>
+  <rect x="58" y="133" width="14" height="8"  fill="#58a6ff"/>
+  <!-- body -->
+  <rect x="88" y="118" width="34" height="26" fill="#58a6ff"/>
+  <!-- neck -->
+  <rect x="114" y="104" width="14" height="18" fill="#58a6ff"/>
+  <!-- head -->
+  <rect x="106" y="88"  width="36" height="22" fill="#58a6ff"/>
+  <!-- snout -->
+  <rect x="138" y="100" width="8"  height="8"  fill="#58a6ff"/>
+  <!-- mouth line -->
+  <rect x="138" y="103" width="8"  height="2"  fill="#0d1117"/>
+  <!-- eye -->
+  <rect x="132" y="92"  width="6"  height="6"  fill="#0d1117" class="eye"/>
+  <!-- arm -->
+  <rect x="114" y="126" width="10" height="6"  fill="#58a6ff"/>
+  <!-- LEG SET A: left forward right back -->
+  <g class="la">
+    <rect x="96"  y="144" width="10" height="18" fill="#58a6ff"/>
+    <rect x="112" y="144" width="10" height="12" fill="#58a6ff"/>
+    <rect x="112" y="154" width="14" height="4"  fill="#58a6ff"/>
+  </g>
+  <!-- LEG SET B: right forward left back -->
+  <g class="lb">
+    <rect x="96"  y="144" width="10" height="12" fill="#58a6ff"/>
+    <rect x="96"  y="154" width="14" height="4"  fill="#58a6ff"/>
+    <rect x="112" y="144" width="10" height="18" fill="#58a6ff"/>
+  </g>
+</g>
+
+<!-- ── Caption ── -->
+<text x="450" y="192" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="#30363d">· github.com/HiskiaPrawiraTarigan · dino auto-run ·</text>
+</svg>
