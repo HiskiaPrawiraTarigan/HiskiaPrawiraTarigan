@@ -341,6 +341,38 @@ Analitik perilaku, deteksi anomali, dan pemodelan sistem prediktif dari dataset 
 </td>
 </tr>
 </table>
+### 🎮 2048 — Main Langsung di GitHub Pages
+
+<br/>
+
+<div align="center">
+
+> *Gabungkan tile · Raih 2048 · Gerak dengan keyboard atau swipe*
+
+<br/>
+
+[![▶ MAIN 2048 SEKARANG](https://img.shields.io/badge/▶%20%20MAIN%20%202048%20%20SEKARANG-58a6ff?style=for-the-badge&logoColor=0d1117)](https://hiskiaprawiraTarigan.github.io/HiskiaPrawiraTarigan/games/2048/)
+
+<br/>
+
+```
+┌──────┬──────┬──────┬──────┐
+│      │   2  │      │   4  │
+├──────┼──────┼──────┼──────┤
+│  16  │   8  │  32  │   2  │
+├──────┼──────┼──────┼──────┤
+│      │  64  │  128 │  16  │
+├──────┼──────┼──────┼──────┤
+│   4  │  256 │  512 │ 1024 │
+└──────┴──────┴──────┴──────┘
+                    → menuju 2048
+```
+
+**Keyboard:** ← → ↑ ↓ &nbsp;|&nbsp; **Mobile:** Swipe ke segala arah &nbsp;|&nbsp; **Undo:** tersedia
+
+*Dihosting di GitHub Pages · Dark theme · Animasi halus · Skor tersimpan otomatis*
+
+</div>
 
 <br/>
 
