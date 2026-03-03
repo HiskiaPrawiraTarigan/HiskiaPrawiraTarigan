@@ -218,14 +218,6 @@ Analitik perilaku, deteksi anomali, dan pemodelan sistem prediktif dari dataset 
 
 <br/>
 
-<!-- 🧬 Conway's Game of Life -->
-**🧬 Conway's Game of Life — Self Playing**
-
-<img src="https://raw.githubusercontent.com/HiskiaPrawiraTarigan/HiskiaPrawiraTarigan/output/game-of-life.svg" width="98%" alt="Conway's Game of Life"/>
-
-<br/>
-
-<img src="https://streak-stats.demolab.com?user=HiskiaPrawiraTarigan&theme=github-dark-blue&hide_border=true&background=0d1117&ring=58a6ff&fire=58a6ff&currStreakLabel=c9d1d9&sideLabels=8b949e" width="55%"/>
 
 </div>
 
