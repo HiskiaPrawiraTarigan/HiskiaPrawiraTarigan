@@ -233,10 +233,6 @@ Analitik perilaku, deteksi anomali, dan pemodelan sistem prediktif dari dataset 
 
 ---
 
-<br/>
-
----
-
 <div align="center">
 
 <br/>
