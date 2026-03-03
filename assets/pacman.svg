@@ -1,139 +1,214 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 120" width="900" height="120">
-<defs>
-  <style>
-    /* ── Labels ── */
-    .hud { font-family:'Courier New',monospace; font-size:13px; font-weight:bold; }
-  </style>
-</defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="900" height="220">
+
+<!-- ══════════════════════════════════════════
+     PAC-MAN ARCADE — github.com/HiskiaPrawiraTarigan
+     Canvas 900×220 | Pac-Man travels x:-60→960 in 5s
+     Speed: 204px/s  |  Ghost offsets: 65px each
+     ══════════════════════════════════════════ -->
 
 <!-- ── Background ── -->
-<rect width="900" height="120" fill="#0d1117"/>
+<rect width="900" height="220" fill="#000010"/>
 
-<!-- ── Maze walls (top & bottom strips) ── -->
-<rect x="0" y="0"   width="900" height="8"  fill="#1158c7" rx="0"/>
-<rect x="0" y="112" width="900" height="8"  fill="#1158c7" rx="0"/>
+<!-- ══════════════════════════════════════════ MAZE STRUCTURE -->
 
-<!-- ── HUD ── -->
-<text x="16" y="26" class="hud" fill="#e3b341">1UP</text>
-<text x="16" y="42" class="hud" fill="white">00</text>
-<text x="400" y="26" class="hud" fill="#e3b341" text-anchor="middle">HIGH SCORE</text>
-<text x="400" y="42" class="hud" fill="white" text-anchor="middle">10000</text>
+<!-- outer border walls -->
+<rect x="0"   y="36"  width="900" height="14" fill="#1158c7" rx="2"/>
+<rect x="0"   y="170" width="900" height="14" fill="#1158c7" rx="2"/>
+<rect x="0"   y="36"  width="14"  height="148" fill="#1158c7" rx="2"/>
+<rect x="886" y="36"  width="14"  height="148" fill="#1158c7" rx="2"/>
 
-<!-- ════════════════════════════
-     DOTS  (eaten by Pac-Man)
-     Pac-Man: -50→950 in 4s (1000px/4s = 250px/s)
-     keyTime = (x+50)/1000
-     ════════════════════════════ -->
+<!-- gaps in outer border (corridor exits) -->
+<rect x="0"   y="95"  width="14"  height="30" fill="#000010"/>
+<rect x="886" y="95"  width="14"  height="30" fill="#000010"/>
 
-<!-- Normal dots y=72 -->
-<circle cx="60"  cy="72" r="4" fill="#e3b341">
-  <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.110;0.120;1" dur="4s" repeatCount="indefinite"/></circle>
-<circle cx="115" cy="72" r="4" fill="#e3b341">
-  <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.165;0.175;1" dur="4s" repeatCount="indefinite"/></circle>
-<circle cx="170" cy="72" r="4" fill="#e3b341">
-  <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.220;0.230;1" dur="4s" repeatCount="indefinite"/></circle>
-<circle cx="225" cy="72" r="4" fill="#e3b341">
-  <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.275;0.285;1" dur="4s" repeatCount="indefinite"/></circle>
-<circle cx="280" cy="72" r="4" fill="#e3b341">
-  <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.330;0.340;1" dur="4s" repeatCount="indefinite"/></circle>
-<circle cx="335" cy="72" r="4" fill="#e3b341">
-  <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.385;0.395;1" dur="4s" repeatCount="indefinite"/></circle>
-<circle cx="390" cy="72" r="4" fill="#e3b341">
-  <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.440;0.450;1" dur="4s" repeatCount="indefinite"/></circle>
-<circle cx="445" cy="72" r="4" fill="#e3b341">
-  <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.495;0.505;1" dur="4s" repeatCount="indefinite"/></circle>
-<circle cx="500" cy="72" r="4" fill="#e3b341">
-  <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.550;0.560;1" dur="4s" repeatCount="indefinite"/></circle>
-<circle cx="555" cy="72" r="4" fill="#e3b341">
-  <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.605;0.615;1" dur="4s" repeatCount="indefinite"/></circle>
-<circle cx="610" cy="72" r="4" fill="#e3b341">
-  <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.660;0.670;1" dur="4s" repeatCount="indefinite"/></circle>
-<circle cx="665" cy="72" r="4" fill="#e3b341">
-  <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.715;0.725;1" dur="4s" repeatCount="indefinite"/></circle>
-<circle cx="720" cy="72" r="4" fill="#e3b341">
-  <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.770;0.780;1" dur="4s" repeatCount="indefinite"/></circle>
-<circle cx="775" cy="72" r="4" fill="#e3b341">
-  <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.825;0.835;1" dur="4s" repeatCount="indefinite"/></circle>
-<circle cx="830" cy="72" r="4" fill="#e3b341">
-  <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.880;0.890;1" dur="4s" repeatCount="indefinite"/></circle>
+<!-- interior horizontal walls (T-junctions) -->
+<rect x="14"  y="80"  width="95"  height="10" fill="#1158c7" rx="1"/>
+<rect x="195" y="80"  width="120" height="10" fill="#1158c7" rx="1"/>
+<rect x="390" y="80"  width="120" height="10" fill="#1158c7" rx="1"/>
+<rect x="585" y="80"  width="120" height="10" fill="#1158c7" rx="1"/>
+<rect x="780" y="80"  width="106" height="10" fill="#1158c7" rx="1"/>
 
-<!-- Power pellets (blink before eaten) -->
-<circle cx="40"  cy="72" r="8" fill="#e3b341" opacity="0.9">
-  <animate attributeName="opacity" values="0.9;0.3;0.9;0.3;0.9;0;0" keyTimes="0;0.020;0.040;0.060;0.080;0.090;1" dur="4s" repeatCount="indefinite"/>
+<rect x="14"  y="130" width="95"  height="10" fill="#1158c7" rx="1"/>
+<rect x="195" y="130" width="120" height="10" fill="#1158c7" rx="1"/>
+<rect x="390" y="130" width="120" height="10" fill="#1158c7" rx="1"/>
+<rect x="585" y="130" width="120" height="10" fill="#1158c7" rx="1"/>
+<rect x="780" y="130" width="106" height="10" fill="#1158c7" rx="1"/>
+
+<!-- vertical pillar stubs -->
+<rect x="109" y="80"  width="10"  height="60" fill="#1158c7" rx="1"/>
+<rect x="315" y="80"  width="10"  height="60" fill="#1158c7" rx="1"/>
+<rect x="510" y="80"  width="10"  height="60" fill="#1158c7" rx="1"/>
+<rect x="705" y="80"  width="10"  height="60" fill="#1158c7" rx="1"/>
+
+<!-- ghost house in center -->
+<rect x="395" y="95"  width="110" height="30" fill="#000010" stroke="#ff69b4" stroke-width="2" rx="3"/>
+<text x="450" y="115" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="#ff69b4">GHOST HOUSE</text>
+
+<!-- ══════════════════════════════════════════ HUD -->
+<text x="20"  y="25" font-family="'Courier New',monospace" font-size="12" font-weight="bold" fill="#ffffff">1UP</text>
+<text x="20"  y="35" font-family="'Courier New',monospace" font-size="11" fill="#ffffff">00680</text>
+<text x="360" y="25" font-family="'Courier New',monospace" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">HIGH SCORE</text>
+<text x="360" y="35" font-family="'Courier New',monospace" font-size="11" fill="#ffffff" text-anchor="middle">99980</text>
+
+<!-- level indicator (dots on right) -->
+<circle cx="810" cy="28" r="5" fill="#e3b341"/>
+<circle cx="825" cy="28" r="5" fill="#e3b341"/>
+<circle cx="840" cy="28" r="5" fill="#e3b341"/>
+
+<!-- ══════════════════════════════════════════ LIVES -->
+<!-- 3 mini pac-men at bottom showing lives -->
+<g transform="translate(20,200)">
+  <path d="M 0,0 L 9,0 A 9,9 0 0,0 -9,0 Z" fill="#e3b341"/>
+  <path d="M 0,0 L 9,0 A 9,9 0 0,1 -9,0 Z" fill="#e3b341"/>
+</g>
+<g transform="translate(45,200)">
+  <path d="M 0,0 L 9,0 A 9,9 0 0,0 -9,0 Z" fill="#e3b341"/>
+  <path d="M 0,0 L 9,0 A 9,9 0 0,1 -9,0 Z" fill="#e3b341"/>
+</g>
+<g transform="translate(70,200)">
+  <path d="M 0,0 L 9,0 A 9,9 0 0,0 -9,0 Z" fill="#e3b341"/>
+  <path d="M 0,0 L 9,0 A 9,9 0 0,1 -9,0 Z" fill="#e3b341"/>
+</g>
+<text x="90" y="205" font-family="'Courier New',monospace" font-size="9" fill="#8b949e">LIVES</text>
+
+<!-- level badge -->
+<rect x="840" y="190" width="48" height="20" rx="4" fill="#1158c7"/>
+<text x="864" y="204" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="white" font-weight="bold">LVL 3</text>
+
+<!-- ══════════════════════════════════════════
+     DOTS  y=110 (corridor center)
+     Pac-Man: -60→960 in 5s (1020px)
+     keyTime = (x+60)/1020
+     ══════════════════════════════════════════ -->
+
+<!-- power pellet LEFT (blinks) -->
+<circle cx="35" cy="110" r="8" fill="#ffffff">
+  <animate attributeName="opacity" values="1;0.2;1;0.2;1;0;0" keyTimes="0;0.03;0.06;0.09;0.092;0.094;1" dur="5s" repeatCount="indefinite"/>
 </circle>
-<circle cx="860" cy="72" r="8" fill="#e3b341" opacity="0.9">
-  <animate attributeName="opacity" values="0.9;0.9;0.9;0.3;0.9;0;0" keyTimes="0;0.700;0.880;0.900;0.920;0.940;1" dur="4s" repeatCount="indefinite"/>
+
+<!-- normal dots (eat timing below) -->
+<circle cx="54"  cy="110" r="3.5" fill="#e9c46a"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.112;0.122;1" dur="5s" repeatCount="indefinite"/></circle>
+<circle cx="73"  cy="110" r="3.5" fill="#e9c46a"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.130;0.140;1" dur="5s" repeatCount="indefinite"/></circle>
+<circle cx="92"  cy="110" r="3.5" fill="#e9c46a"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.149;0.159;1" dur="5s" repeatCount="indefinite"/></circle>
+<circle cx="130" cy="110" r="3.5" fill="#e9c46a"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.186;0.196;1" dur="5s" repeatCount="indefinite"/></circle>
+<circle cx="155" cy="110" r="3.5" fill="#e9c46a"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.211;0.221;1" dur="5s" repeatCount="indefinite"/></circle>
+<circle cx="180" cy="110" r="3.5" fill="#e9c46a"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.235;0.245;1" dur="5s" repeatCount="indefinite"/></circle>
+<circle cx="235" cy="110" r="3.5" fill="#e9c46a"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.289;0.299;1" dur="5s" repeatCount="indefinite"/></circle>
+<circle cx="270" cy="110" r="3.5" fill="#e9c46a"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.324;0.334;1" dur="5s" repeatCount="indefinite"/></circle>
+<circle cx="305" cy="110" r="3.5" fill="#e9c46a"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.358;0.368;1" dur="5s" repeatCount="indefinite"/></circle>
+<circle cx="340" cy="110" r="3.5" fill="#e9c46a"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.392;0.402;1" dur="5s" repeatCount="indefinite"/></circle>
+<circle cx="375" cy="110" r="3.5" fill="#e9c46a"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.426;0.436;1" dur="5s" repeatCount="indefinite"/></circle>
+<!-- gap (ghost house) 395–505 -->
+<circle cx="520" cy="110" r="3.5" fill="#e9c46a"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.569;0.579;1" dur="5s" repeatCount="indefinite"/></circle>
+<circle cx="555" cy="110" r="3.5" fill="#e9c46a"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.603;0.613;1" dur="5s" repeatCount="indefinite"/></circle>
+<circle cx="590" cy="110" r="3.5" fill="#e9c46a"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.637;0.647;1" dur="5s" repeatCount="indefinite"/></circle>
+<circle cx="625" cy="110" r="3.5" fill="#e9c46a"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.671;0.681;1" dur="5s" repeatCount="indefinite"/></circle>
+<circle cx="660" cy="110" r="3.5" fill="#e9c46a"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.706;0.716;1" dur="5s" repeatCount="indefinite"/></circle>
+<circle cx="720" cy="110" r="3.5" fill="#e9c46a"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.765;0.775;1" dur="5s" repeatCount="indefinite"/></circle>
+<circle cx="755" cy="110" r="3.5" fill="#e9c46a"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.799;0.809;1" dur="5s" repeatCount="indefinite"/></circle>
+<circle cx="790" cy="110" r="3.5" fill="#e9c46a"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.833;0.843;1" dur="5s" repeatCount="indefinite"/></circle>
+<circle cx="825" cy="110" r="3.5" fill="#e9c46a"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.867;0.877;1" dur="5s" repeatCount="indefinite"/></circle>
+<circle cx="860" cy="110" r="3.5" fill="#e9c46a"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.902;0.912;1" dur="5s" repeatCount="indefinite"/></circle>
+
+<!-- power pellet RIGHT (blinks) -->
+<circle cx="876" cy="110" r="8" fill="#ffffff">
+  <animate attributeName="opacity" values="1;1;0.2;1;0.2;1;0;0" keyTimes="0;0.850;0.870;0.890;0.910;0.920;0.928;1" dur="5s" repeatCount="indefinite"/>
 </circle>
 
-<!-- ════════════════════════════
-     GHOST 4 — Clyde (orange)  start=-290,72  end=710,72
-     ════════════════════════════ -->
+<!-- ══════════════════════════════════════════ BONUS FRUIT (cherry) -->
 <g>
-  <animateTransform attributeName="transform" type="translate" values="-290,72;710,72" dur="4s" repeatCount="indefinite"/>
-  <animateTransform attributeName="transform" type="translate" values="0,0;0,-4;0,0;0,4;0,0" dur="0.5s" repeatCount="indefinite" additive="sum"/>
-  <path d="M -12,-8 A 12,12 0 0,1 12,-8 L 12,14 Q 8,8 4,14 Q 0,8 -4,14 Q -8,8 -12,14 L -12,-8 Z" fill="#ffb847"/>
-  <ellipse cx="-4" cy="-6" rx="3.5" ry="4" fill="white"/>
-  <ellipse cx="4"  cy="-6" rx="3.5" ry="4" fill="white"/>
-  <circle  cx="-2.5" cy="-5.5" r="2" fill="#0d1117"/>
-  <circle  cx="5.5"  cy="-5.5" r="2" fill="#0d1117"/>
+  <animateTransform attributeName="transform" type="translate" values="460,110;460,110;460,110;460,110" dur="5s" repeatCount="indefinite"/>
+  <!-- cherry visible at 40%–55% if pac-man hasn't eaten it -->
+  <circle cx="0" cy="0"  r="6"  fill="#e63946" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.38;0.40;0.44;0.46;1" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="7" cy="-2" r="6"  fill="#e63946" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.38;0.40;0.44;0.46;1" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <!-- stems -->
+  <path d="M 0,-5 Q 3,-12 7,-7" stroke="#3a5a40" stroke-width="1.5" fill="none" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.38;0.40;0.44;0.46;1" dur="5s" repeatCount="indefinite"/>
+  </path>
 </g>
 
-<!-- ════════════════════════════
-     GHOST 3 — Inky (cyan)  start=-230,72  end=770,72
-     ════════════════════════════ -->
+<!-- ══════════════════════════════════════════
+     GHOSTS  (r=16, wavy skirt, expressive eyes)
+     Ghost shape: M -16,0 A 16,16 0 0,1 16,0 L 16,22
+                  Q 11,14 6,22 Q 0,14 -6,22 Q -11,14 -16,22 Z
+     ══════════════════════════════════════════ -->
+
+<!-- CLYDE (orange) — furthest back -->
 <g>
-  <animateTransform attributeName="transform" type="translate" values="-230,72;770,72" dur="4s" repeatCount="indefinite"/>
-  <animateTransform attributeName="transform" type="translate" values="0,4;0,-4;0,4" dur="0.5s" repeatCount="indefinite" additive="sum"/>
-  <path d="M -12,-8 A 12,12 0 0,1 12,-8 L 12,14 Q 8,8 4,14 Q 0,8 -4,14 Q -8,8 -12,14 L -12,-8 Z" fill="#00b4d8"/>
-  <ellipse cx="-4" cy="-6" rx="3.5" ry="4" fill="white"/>
-  <ellipse cx="4"  cy="-6" rx="3.5" ry="4" fill="white"/>
-  <circle  cx="-2.5" cy="-5.5" r="2" fill="#0d1117"/>
-  <circle  cx="5.5"  cy="-5.5" r="2" fill="#0d1117"/>
+  <animateTransform attributeName="transform" type="translate" values="-255,110;765,110" dur="5s" repeatCount="indefinite"/>
+  <animateTransform attributeName="transform" type="translate" values="0,-3;0,3;0,-3" dur="0.55s" repeatCount="indefinite" additive="sum"/>
+  <path d="M -16,0 A 16,16 0 0,1 16,0 L 16,22 Q 11,14 6,22 Q 0,14 -6,22 Q -11,14 -16,22 Z" fill="#ffb847"/>
+  <ellipse cx="-5.5" cy="-3" rx="5" ry="5.5" fill="white"/>
+  <ellipse cx="5.5"  cy="-3" rx="5" ry="5.5" fill="white"/>
+  <circle  cx="-3.5" cy="-2" r="3" fill="#000080"/>
+  <circle  cx="7.5"  cy="-2" r="3" fill="#000080"/>
 </g>
 
-<!-- ════════════════════════════
-     GHOST 2 — Pinky (pink)  start=-170,72  end=830,72
-     ════════════════════════════ -->
+<!-- INKY (cyan) -->
 <g>
-  <animateTransform attributeName="transform" type="translate" values="-170,72;830,72" dur="4s" repeatCount="indefinite"/>
-  <animateTransform attributeName="transform" type="translate" values="0,0;0,-4;0,0;0,4;0,0" dur="0.5s" repeatCount="indefinite" additive="sum"/>
-  <path d="M -12,-8 A 12,12 0 0,1 12,-8 L 12,14 Q 8,8 4,14 Q 0,8 -4,14 Q -8,8 -12,14 L -12,-8 Z" fill="#ffb8ff"/>
-  <ellipse cx="-4" cy="-6" rx="3.5" ry="4" fill="white"/>
-  <ellipse cx="4"  cy="-6" rx="3.5" ry="4" fill="white"/>
-  <circle  cx="-2.5" cy="-5.5" r="2" fill="#0d1117"/>
-  <circle  cx="5.5"  cy="-5.5" r="2" fill="#0d1117"/>
+  <animateTransform attributeName="transform" type="translate" values="-190,110;830,110" dur="5s" repeatCount="indefinite"/>
+  <animateTransform attributeName="transform" type="translate" values="0,3;0,-3;0,3" dur="0.55s" repeatCount="indefinite" additive="sum"/>
+  <path d="M -16,0 A 16,16 0 0,1 16,0 L 16,22 Q 11,14 6,22 Q 0,14 -6,22 Q -11,14 -16,22 Z" fill="#00c2c7"/>
+  <ellipse cx="-5.5" cy="-3" rx="5" ry="5.5" fill="white"/>
+  <ellipse cx="5.5"  cy="-3" rx="5" ry="5.5" fill="white"/>
+  <circle  cx="-3.5" cy="-2" r="3" fill="#000080"/>
+  <circle  cx="7.5"  cy="-2" r="3" fill="#000080"/>
 </g>
 
-<!-- ════════════════════════════
-     GHOST 1 — Blinky (red)  start=-110,72  end=890,72
-     ════════════════════════════ -->
+<!-- PINKY (pink) -->
 <g>
-  <animateTransform attributeName="transform" type="translate" values="-110,72;890,72" dur="4s" repeatCount="indefinite"/>
-  <animateTransform attributeName="transform" type="translate" values="0,4;0,-4;0,4" dur="0.5s" repeatCount="indefinite" additive="sum"/>
-  <path d="M -12,-8 A 12,12 0 0,1 12,-8 L 12,14 Q 8,8 4,14 Q 0,8 -4,14 Q -8,8 -12,14 L -12,-8 Z" fill="#ff0000"/>
-  <ellipse cx="-4" cy="-6" rx="3.5" ry="4" fill="white"/>
-  <ellipse cx="4"  cy="-6" rx="3.5" ry="4" fill="white"/>
-  <circle  cx="-2.5" cy="-5.5" r="2" fill="#0d1117"/>
-  <circle  cx="5.5"  cy="-5.5" r="2" fill="#0d1117"/>
+  <animateTransform attributeName="transform" type="translate" values="-125,110;895,110" dur="5s" repeatCount="indefinite"/>
+  <animateTransform attributeName="transform" type="translate" values="0,-3;0,3;0,-3" dur="0.55s" repeatCount="indefinite" additive="sum"/>
+  <path d="M -16,0 A 16,16 0 0,1 16,0 L 16,22 Q 11,14 6,22 Q 0,14 -6,22 Q -11,14 -16,22 Z" fill="#ff9de2"/>
+  <ellipse cx="-5.5" cy="-3" rx="5" ry="5.5" fill="white"/>
+  <ellipse cx="5.5"  cy="-3" rx="5" ry="5.5" fill="white"/>
+  <circle  cx="-3.5" cy="-2" r="3" fill="#000080"/>
+  <circle  cx="7.5"  cy="-2" r="3" fill="#000080"/>
 </g>
 
-<!-- ════════════════════════════
-     PAC-MAN  start=-50,72  end=950,72
-     Mouth: top half rotates -25→0→-25 (0.4s)
-             bot half rotates  25→0→25  (0.4s)
-     ════════════════════════════ -->
+<!-- BLINKY (red) — closest behind -->
 <g>
-  <animateTransform attributeName="transform" type="translate" values="-50,72;950,72" dur="4s" repeatCount="indefinite"/>
-  <!-- top half:  M 0,0 → (18,0) → arc top → (-18,0) → Z -->
-  <path d="M 0,0 L 18,0 A 18,18 0 0,0 -18,0 Z" fill="#e3b341">
-    <animateTransform attributeName="transform" type="rotate" values="-25;0;-25" dur="0.4s" repeatCount="indefinite"/>
+  <animateTransform attributeName="transform" type="translate" values="-60,110;960,110" dur="5s" repeatCount="indefinite" begin="0.5s"/>
+  <animateTransform attributeName="transform" type="translate" values="0,3;0,-3;0,3" dur="0.55s" repeatCount="indefinite" additive="sum"/>
+  <path d="M -16,0 A 16,16 0 0,1 16,0 L 16,22 Q 11,14 6,22 Q 0,14 -6,22 Q -11,14 -16,22 Z" fill="#ff0000"/>
+  <ellipse cx="-5.5" cy="-3" rx="5" ry="5.5" fill="white"/>
+  <ellipse cx="5.5"  cy="-3" rx="5" ry="5.5" fill="white"/>
+  <circle  cx="-3.5" cy="-2" r="3" fill="#000080"/>
+  <circle  cx="7.5"  cy="-2" r="3" fill="#000080"/>
+</g>
+
+<!-- ══════════════════════════════════════════
+     PAC-MAN  (r=22)
+     Translate: -60,110 → 960,110  5s
+     Mouth: top -28°→0, bot 28°→0 (0.35s cycle)
+     ══════════════════════════════════════════ -->
+<g>
+  <animateTransform attributeName="transform" type="translate" values="-60,110;960,110" dur="5s" repeatCount="indefinite"/>
+  <!-- top half -->
+  <path d="M 0,0 L 22,0 A 22,22 0 0,0 -22,0 Z" fill="#e3b341">
+    <animateTransform attributeName="transform" type="rotate" values="-28;0;-28" dur="0.35s" repeatCount="indefinite"/>
   </path>
   <!-- bottom half -->
-  <path d="M 0,0 L 18,0 A 18,18 0 0,1 -18,0 Z" fill="#e3b341">
-    <animateTransform attributeName="transform" type="rotate" values="25;0;25" dur="0.4s" repeatCount="indefinite"/>
+  <path d="M 0,0 L 22,0 A 22,22 0 0,1 -22,0 Z" fill="#e3b341">
+    <animateTransform attributeName="transform" type="rotate" values="28;0;28" dur="0.35s" repeatCount="indefinite"/>
   </path>
 </g>
 
-<!-- ── Caption ── -->
-<text x="450" y="110" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#30363d">· PAC-MAN · github.com/HiskiaPrawiraTarigan ·</text>
+<!-- ── score popup (100 pts when pellet eaten) ── -->
+<text x="35" cy="90" y="90" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" font-weight="bold" fill="#e3b341" opacity="0">
+  <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.09;0.10;0.14;0.16;1" dur="5s" repeatCount="indefinite"/>
+  100
+</text>
+<text x="875" y="90" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" font-weight="bold" fill="#e3b341" opacity="0">
+  <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.920;0.930;0.960;0.980;1" dur="5s" repeatCount="indefinite"/>
+  100
+</text>
+
+<!-- caption -->
+<text x="450" y="215" text-anchor="middle" font-family="'Courier New',monospace" font-size="8" fill="#1158c7">· PAC-MAN · github.com/HiskiaPrawiraTarigan ·</text>
+
 </svg>
