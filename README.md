@@ -27,7 +27,7 @@
 
 <br/>
 
-### Tentang Saya
+![Tentang Saya](https://img.shields.io/badge/━━━━━━%20Tentang%20Saya%20━━━━━━-58a6ff?style=for-the-badge&logoColor=white)
 
 Saya adalah **web systems engineer** yang berfokus pada pembangunan infrastruktur digital yang terstruktur, skalabel, dan aman.
 
@@ -43,7 +43,7 @@ Saat ini memperluas wawasan ke arah **integrasi AI**, **infrastruktur Blockchain
 
 <br/>
 
-### Arsitektur & Rekayasa
+![Arsitektur](https://img.shields.io/badge/━━━━━━%20Arsitektur%20%26%20Rekayasa%20━━━━━━-3fb950?style=for-the-badge&logoColor=white)
 
 <br/>
 
@@ -66,7 +66,7 @@ Saat ini memperluas wawasan ke arah **integrasi AI**, **infrastruktur Blockchain
 
 <br/>
 
-### Teknologi yang Digunakan
+![Teknologi](https://img.shields.io/badge/━━━━━━%20Teknologi%20yang%20Digunakan%20━━━━━━-d2a8ff?style=for-the-badge&logoColor=white)
 
 <br/>
 
@@ -109,7 +109,7 @@ Saat ini memperluas wawasan ke arah **integrasi AI**, **infrastruktur Blockchain
 
 <br/>
 
-### Sistem yang Dibangun
+![Sistem](https://img.shields.io/badge/━━━━━━%20Sistem%20yang%20Dibangun%20━━━━━━-f0883e?style=for-the-badge&logoColor=white)
 
 <br/>
 
@@ -162,7 +162,7 @@ Antarmuka kontrol terpadu dengan visualisasi data, orkestrasi CRUD, pencatatan a
 
 <br/>
 
-### Arah Teknologi
+![Arah](https://img.shields.io/badge/━━━━━━%20Arah%20Teknologi%20━━━━━━-00C7B7?style=for-the-badge&logoColor=white)
 
 <br/>
 
@@ -203,7 +203,7 @@ Analitik perilaku, deteksi anomali, dan pemodelan sistem prediktif dari dataset 
 
 <br/>
 
-### Aktivitas GitHub
+![Aktivitas](https://img.shields.io/badge/━━━━━━%20Aktivitas%20GitHub%20━━━━━━-e3b341?style=for-the-badge&logoColor=black)
 
 <br/>
 
@@ -232,65 +232,6 @@ Analitik perilaku, deteksi anomali, dan pemodelan sistem prediktif dari dataset 
 <br/>
 
 ---
-
-<br/>
-
-### Mini Games
-
-<br/>
-
-<table width="100%">
-<tr>
-<td width="50%" valign="top" align="center">
-
-#### 🟩 Sudoku
-
-> *Uji logikamu — sama seperti cara saya mendekati setiap sistem.*
-
-```
-┌───────┬───────┬───────┐
-│ 5 3 . │ . 7 . │ . . . │
-│ 6 . . │ 1 9 5 │ . . . │
-│ . 9 8 │ . . . │ . 6 . │
-├───────┼───────┼───────┤
-│ 8 . . │ . 6 . │ . . 3 │
-│ 4 . . │ 8 . 3 │ . . 1 │
-│ 7 . . │ . 2 . │ . . 6 │
-├───────┼───────┼───────┤
-│ . 6 . │ . . . │ 2 8 . │
-│ . . . │ 4 1 9 │ . . 5 │
-│ . . . │ . 8 . │ . 7 9 │
-└───────┴───────┴───────┘
-```
-
-[![Play Sudoku](https://img.shields.io/badge/▶%20Main%20Sudoku%20Online-1a1a2e?style=for-the-badge&logo=target&logoColor=4FC08D)](https://sudoku.com)
-
-</td>
-<td width="50%" valign="top" align="center">
-
-#### 🎮 2048
-
-> *Gabungkan logika, raih 2048.*
-
-[![▶ MAIN 2048](https://img.shields.io/badge/▶%20%20MAIN%20%202048-58a6ff?style=for-the-badge&logoColor=0d1117)](https://hiskiaprawiraTarigan.github.io/HiskiaPrawiraTarigan/games/2048/)
-
-```
-┌──────┬──────┬──────┬──────┐
-│      │   2  │      │   4  │
-├──────┼──────┼──────┼──────┤
-│  16  │   8  │  32  │   2  │
-├──────┼──────┼──────┼──────┤
-│      │  64  │  128 │  16  │
-├──────┼──────┼──────┼──────┤
-│   4  │  256 │  512 │ 1024 │
-└──────┴──────┴──────┴──────┘
-```
-
-*Keyboard ← → ↑ ↓ &nbsp;|&nbsp; Swipe mobile &nbsp;|&nbsp; Undo tersedia*
-
-</td>
-</tr>
-</table>
 
 <br/>
 
