@@ -244,13 +244,19 @@ Behavioral analytics, anomaly detection, and predictive system modeling from str
 
 <div align="center">
 
-<img height="165em" src="https://github-readme-stats.vercel.app/api?username=HiskiaPrawiraTarigan&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=c9d1d9&text_color=8b949e&icon_color=58a6ff&count_private=true&hide=stars"/>
-&nbsp;&nbsp;
-<img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=HiskiaPrawiraTarigan&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=c9d1d9&text_color=8b949e&langs_count=6"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=HiskiaPrawiraTarigan&theme=github_dark" width="98%"/>
 
-<br/><br/>
+<br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=HiskiaPrawiraTarigan&theme=github-dark-blue&hide_border=true&background=0d1117&ring=58a6ff&fire=58a6ff&currStreakLabel=c9d1d9" width="49%"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=HiskiaPrawiraTarigan&theme=github_dark" width="32%"/>
+&nbsp;
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=HiskiaPrawiraTarigan&theme=github_dark" width="32%"/>
+&nbsp;
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=HiskiaPrawiraTarigan&theme=github_dark" width="32%"/>
+
+<br/>
+
+<img src="https://streak-stats.demolab.com?user=HiskiaPrawiraTarigan&theme=github-dark-blue&hide_border=true&background=0d1117&ring=58a6ff&fire=58a6ff&currStreakLabel=c9d1d9&sideLabels=8b949e" width="55%"/>
 
 </div>
 
