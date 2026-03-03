@@ -10,7 +10,7 @@
 
 [![GitHub followers](https://img.shields.io/github/followers/HiskiaPrawiraTarigan?label=Followers&style=for-the-badge&color=58a6ff&labelColor=0d1117&logo=github&logoColor=white)](https://github.com/HiskiaPrawiraTarigan)
 &nbsp;
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/hiskia.tarigan)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/hizkia.trg/)
 &nbsp;
 [![Profile Views](https://komarev.com/ghpvc/?username=HiskiaPrawiraTarigan&style=for-the-badge&color=6e7681&label=Views)](https://github.com/HiskiaPrawiraTarigan)
 
