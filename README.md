@@ -75,16 +75,16 @@ pendekatan : Design-first. Logic-driven.
 
 | Keahlian | Kemampuan | Level |
 |---|---|---|
-| Arsitektur Backend | `████████████████████` | Expert |
-| Laravel / PHP | `████████████████████` | Expert |
-| Sistem Autentikasi | `███████████████████░` | Advanced |
-| Desain Database | `███████████████████░` | Advanced |
-| REST API Design | `██████████████████░░` | Advanced |
-| Analisis Sistem | `████████████████░░░░` | Proficient |
-| Sistem Real-time | `███████████████░░░░░` | Proficient |
-| Pemodelan Data | `███████████████░░░░░` | Proficient |
-| Integrasi AI | `█████████░░░░░░░░░░░` | Learning |
-| Blockchain / Web3 | `████████░░░░░░░░░░░░` | Exploring |
+| Arsitektur Backend | `████████████████████` | ![Expert](https://img.shields.io/badge/Expert-238636?style=flat-square) |
+| Laravel / PHP | `████████████████████` | ![Expert](https://img.shields.io/badge/Expert-238636?style=flat-square) |
+| Sistem Autentikasi | `███████████████████░` | ![Advanced](https://img.shields.io/badge/Advanced-0550ae?style=flat-square) |
+| Desain Database | `███████████████████░` | ![Advanced](https://img.shields.io/badge/Advanced-0550ae?style=flat-square) |
+| REST API Design | `██████████████████░░` | ![Advanced](https://img.shields.io/badge/Advanced-0550ae?style=flat-square) |
+| Analisis Sistem | `████████████████░░░░` | ![Proficient](https://img.shields.io/badge/Proficient-6e40c9?style=flat-square) |
+| Sistem Real-time | `███████████████░░░░░` | ![Proficient](https://img.shields.io/badge/Proficient-6e40c9?style=flat-square) |
+| Pemodelan Data | `███████████████░░░░░` | ![Proficient](https://img.shields.io/badge/Proficient-6e40c9?style=flat-square) |
+| Integrasi AI | `█████████░░░░░░░░░░░` | ![Learning](https://img.shields.io/badge/Learning-b08800?style=flat-square) |
+| Blockchain / Web3 | `████████░░░░░░░░░░░░` | ![Exploring](https://img.shields.io/badge/Exploring-6e7681?style=flat-square) |
 
 <br/>
 
@@ -233,15 +233,15 @@ Analitik perilaku, deteksi anomali, dan pemodelan sistem prediktif dari dataset 
 
 <br/>
 
-&nbsp;&nbsp;`01` &nbsp; Sistem harus dirancang untuk kejelasan sebelum optimasi
+![01](https://img.shields.io/badge/01-58a6ff?style=flat-square&logoColor=white) &nbsp; Sistem harus dirancang untuk kejelasan sebelum optimasi
 
-&nbsp;&nbsp;`02` &nbsp; Keamanan adalah arsitektur, bukan tambahan belakangan
+![02](https://img.shields.io/badge/02-3fb950?style=flat-square&logoColor=white) &nbsp; Keamanan adalah arsitektur, bukan tambahan belakangan
 
-&nbsp;&nbsp;`03` &nbsp; Setiap abstraksi harus membuktikan keberadaannya
+![03](https://img.shields.io/badge/03-d2a8ff?style=flat-square&logoColor=white) &nbsp; Setiap abstraksi harus membuktikan keberadaannya
 
-&nbsp;&nbsp;`04` &nbsp; Kompleksitas adalah kewajiban — struktur adalah aset
+![04](https://img.shields.io/badge/04-f0883e?style=flat-square&logoColor=white) &nbsp; Kompleksitas adalah kewajiban — struktur adalah aset
 
-&nbsp;&nbsp;`05` &nbsp; Rekayasa yang baik menyisakan lebih sedikit ruang untuk interpretasi
+![05](https://img.shields.io/badge/05-e3b341?style=flat-square&logoColor=black) &nbsp; Rekayasa yang baik menyisakan lebih sedikit ruang untuk interpretasi
 
 <br/>
 
@@ -260,6 +260,12 @@ Analitik perilaku, deteksi anomali, dan pemodelan sistem prediktif dari dataset 
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/HiskiaPrawiraTarigan/HiskiaPrawiraTarigan/output/github-contribution-grid-snake.svg"/>
   <img alt="github-snake" src="https://raw.githubusercontent.com/HiskiaPrawiraTarigan/HiskiaPrawiraTarigan/output/github-contribution-grid-snake-dark.svg" width="98%"/>
 </picture>
+
+<br/>
+
+**🧬 Conway's Game of Life — Self Playing**
+
+<img src="https://raw.githubusercontent.com/HiskiaPrawiraTarigan/HiskiaPrawiraTarigan/output/game-of-life.svg" width="98%" alt="Conway's Game of Life"/>
 
 <br/><br/>
 
